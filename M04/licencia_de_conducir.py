@@ -32,5 +32,13 @@ else:
   seguranca = input("Ta usando sinto de seguranca? (sim/nao)").lower()
   sono = input("Voce durmiu menos de 4 horas esta noite? (sim/nao)").lower()
   oculos = input("esqueceu seus oculos? brigou com eles foi ?").lower()
-
+#adicionando as condicionais.
+  if seguranca == "sim" and sono == "nao" and oculos == "nao":
+     print("Pode seguir sua viagem.")
+  elif oculos == "sim" or sono == "sim":
+    print("entrega as chaves.")
+  elif not seguranca == "sim":
+     print("coloque o sinto antes de sair.")
+  else:
+     print("Chame o uber")
   
