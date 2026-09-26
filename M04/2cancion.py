@@ -1,5 +1,5 @@
 """
-NOMBRE: [Tu Nombre]
+NOMBRE: Marcos Alves Sep 26,2026
 MODULO 4 - TAREA 2
 CANCION FAVORITA
 Uso de manipulación de cadenas, operadores de comparación y sentencias if/else.
@@ -9,13 +9,14 @@ Uso de manipulación de cadenas, operadores de comparación y sentencias if/else
 # Uno de ellos es .rjust(ancho), que alinea el texto a la derecha.
 
 # TODO Tarea 1: Pedir al usuario que escriba su línea favorita de una canción
-linea = input("Escribe una línea de tu canción favorita: ")
+linea = (input("Escribe una línea de tu canción favorita: "))
 
 # TODO Tarea 2: Crear una variable booleana para verificar que la línea no esté vacía
 # Usa un operador de comparación (por ejemplo, verificar si el largo de la cadena es mayor a 0)
-es_valida = False  # Reemplaza con tu código (ej: len(linea) > 0)
-
-
+#es_valida = False  # Reemplaza con tu código (ej: len(linea) > 0)
+verificacion = len(linea)
+es_valida = verificacion > 0
+print(verificacion)
 # TODO Tarea 3: Usa una estructura if/else 
 # Si 'es_valida' es True, alinea el texto a la derecha con .rjust(80) e imprímelo.
 # De lo contrario, imprime un mensaje de error pidiendo que escriban algo.
@@ -24,7 +25,12 @@ es_valida = False  # Reemplaza con tu código (ej: len(linea) > 0)
 #     print(linea_alineada)
 # else:
 #     print("Error: No ingresaste ninguna línea.")
-
+if es_valida:
+    print(linea.rjust(80))
+    if verificacion > 50:
+     print("Era solo una frase, escribiste la canción entera jajaja.")
+else:
+    print("ERROR:escribe algo.")
 
 # TODO Reto: Agrega una condición adicional para verificar si la línea tiene más de 50 caracteres 
 # y muestra un mensaje diferente si es demasiado larga.
