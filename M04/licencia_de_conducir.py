@@ -19,10 +19,18 @@ Salida clara: Muestra un mensaje personalizado indicando si la persona puede
    ¿Qué imprudencia o descuido no le permitirías a tu abuela antes de subirse al auto?
      (Ejemplo: "¿Olvidó los lentes en la cocina?")
 """
-# empezando.
-print("¡Buenas tardes!")
-print("Esto es solo un procedimiento de rutina...")
-edad = int(input("¿Cuántos años tienes? "))
-if edad < 18:
-    print("Llama a algún adulto para que te lleve a casa; todavía no puedes conducir..")
+# iniciando o programa dz de rotina.
+print("Boa tarde! bem vindo ao DMV")
+print("Vamos da inicio ao seu processo de habilitacao.")
+idade = int(input("quantos anos vc tem? "))
+if idade < 18:
+    print("Vai pra casa e espera completar sua maior idade. voce precisa de 18 ou mais para poder ter uma habilitacao")
+# adicionando o else para continuar o programa caso o sujeito seja maior de 18 anos.
 else:
+
+  print("Me de aqui sua habilitacao.")
+  seguranca = input("Ta usando sinto de seguranca? (sim/nao)").lower()
+  sono = input("Voce durmiu menos de 4 horas esta noite? (sim/nao)").lower()
+  oculos = input("esqueceu seus oculos? brigou com eles foi ?").lower()
+
+  
