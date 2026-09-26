@@ -10,7 +10,6 @@ Entrada de datos: Solicita la edad del usuario y al menos 2 o 3 condiciones
  #
 Sentencias de control: Usa estructuras condicionales (if, else if, else)
  y operadores lógicos (AND, OR, NOT) para evaluar la combinación de datos.
- #
 Salida clara: Muestra un mensaje personalizado indicando si la persona puede
  conducir o si debe entregar las llaves inmediatamente.
  #
@@ -19,26 +18,26 @@ Salida clara: Muestra un mensaje personalizado indicando si la persona puede
    ¿Qué imprudencia o descuido no le permitirías a tu abuela antes de subirse al auto?
      (Ejemplo: "¿Olvidó los lentes en la cocina?")
 """
-# iniciando o programa dz de rotina.
-print("Boa tarde! bem vindo ao DMV")
-print("Vamos da inicio ao seu processo de habilitacao.")
-idade = int(input("quantos anos vc tem? "))
-if idade < 18:
-    print("Vai pra casa e espera completar sua maior idade. voce precisa de 18 ou mais para poder ter uma habilitacao")
-# adicionando o else para continuar o programa caso o sujeito seja maior de 18 anos.
+# iniciando el programa de rutina dz.
+print("¡Buenas tardes! Bienvenido al DMV.")
+print("Este es un procedimiento de rutina.")
+edad = int(input("¿Cuántos años tienes?"))
+if edad < 18:
+    print("Vete a casa y espera a cumplir la mayoría de edad. Es necesario tener 18 años o más para poder conducir..")
+#añadiendo el else para continuar el programa en caso de que la persona sea mayor de 18 años.
 else:
 
-  print("Me de aqui sua habilitacao.")
-  seguranca = input("Ta usando sinto de seguranca? (sim/nao)").lower()
-  sono = input("Voce durmiu menos de 4 horas esta noite? (sim/nao)").lower()
-  oculos = input("esqueceu seus oculos? brigou com eles foi ?").lower()
-#adicionando as condicionais.
-  if seguranca == "sim" and sono == "nao" and oculos == "nao":
-     print("Pode seguir sua viagem.")
-  elif oculos == "sim" or sono == "sim":
-    print("entrega as chaves.")
-  elif not seguranca == "sim":
-     print("coloque o sinto antes de sair.")
+  print("Dame tu licencia de conducir.")
+  seguridad = input("¿Lleva puesto el cinturón de seguridad? (si/no)").lower()
+  sueño = input("¿Durmió menos de 4 horas esta noche? (si/no)").lower()
+  gafas = input("¿Olvidaste tus gafas? ¿Te peleaste con ellas, o qué? (si/no)").lower()
+#añadiendo las condicionales.
+  if seguridad == "si" and sueño == "no" and gafas == "no":
+     print("Puede continuar su viaje.")
+  elif gafas == "si" or sueño == "si":
+    print("entrega las llaves.")
+  elif not seguridad == "si":
+     print("Ponte el cinturón antes de salir..")
   else:
-     print("Chame o uber")
+     print("Pide un Uber.")
   
