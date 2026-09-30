@@ -17,7 +17,8 @@ print("churrasco")
 print("PF de posto")
 # TODO #3:
 # Guarda lo que el usuario escribió en una variable llamada `comida`.
-
+comida = input("qual comida vai a querer?").lower()
+print (comida) 
 # TODO #4:
 # Convierte lo ingresado a minúsculas para asegurar la comparación correcta.
 
