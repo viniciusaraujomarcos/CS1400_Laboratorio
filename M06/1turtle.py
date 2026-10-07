@@ -25,12 +25,20 @@ t.speed(3)         # Velocidad del dibujo (1 es lento, 10 es rápido)
 t.color("darkblue", "lightblue")  # (Color del borde, Color de relleno - los puedes ajustar si deseas - TODO 5 los colores son parametros o argumentos?)
 t.begin_fill()
 
+<<<<<<< HEAD
 # TODO 6 Este for loop que hace que? diz como a tarataruga deve andar.
+=======
+# TODO 6 Este for loop que hace?
+>>>>>>> 331e3632f7e4622984e7cee06e98f9109378cb12
 for _ in range(4):
     t.forward(100)  # 
     t.left(90)      # 
 
+<<<<<<< HEAD
 # TODO 7 En que linea empezo el fill? o relleno? na linha 26 
+=======
+# TODO 7 En que linea de codigo empezo el fill? o relleno?
+>>>>>>> 331e3632f7e4622984e7cee06e98f9109378cb12
 t.end_fill()
 
 # Mantiene la ventana abierta hasta que hagas clic en ella
