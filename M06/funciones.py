@@ -17,8 +17,9 @@
 
 # TODO: Paso 1. Importa el módulo 'random'.
 
-
+import random
 def lanzar_dado():
+    random.randint(1, 6)
     """
     Simula el lanzamiento de un dado de seis caras.
 
@@ -29,9 +30,9 @@ def lanzar_dado():
     """
     # TODO: Paso 2. Genera un número aleatorio entre 1 y 6.
     #Guardalo en una variable llamada 'resultado'.
- 
+    resultado = random.randint(1, 6)
     # TODO: Paso 3. Devuelve el resultado.
-    return  # Reemplaza esto con la variable que contiene el resultado
+    return resultado# Reemplaza esto con la variable que contiene el resultado
 
 
 # --- Bloque para probar tu función ---
@@ -42,4 +43,4 @@ if __name__ == "__main__":
     # Usamos un bucle para llamar a la función varias veces
     for i in range(5):
         resultado_lanzamiento = lanzar_dado()
-        print(f"Lanzamiento {i + 1}: {resultado_lanzamiento}")
+        print(f"Lanzamiento {i + 1}: {resultado_lanzamiento}")    
